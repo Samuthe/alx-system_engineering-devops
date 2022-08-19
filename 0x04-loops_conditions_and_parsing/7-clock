@@ -12,5 +12,6 @@ while [ $minutes -lt 60 ]
 do
 echo $minutes
 minutes=$((minutes+1))
+
 done
 done
