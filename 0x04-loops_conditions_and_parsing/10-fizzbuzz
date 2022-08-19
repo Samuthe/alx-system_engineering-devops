@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#divisibility
+
+my_num=1
+while [ $my_num -lt 101 ]
+do
+if [ $((my_num%15)) = 0 ]
+then
+echo "FizzBuzz"
+
+elif [ $((my_num%3)) = 0 ]
+then
+echo "Fizz"
+
+elif [ $((my_num%5)) = 0 ]
+then
+echo "Buzz"
+
+else
+echo "$my_num"
+
+fi
+my_num=$((my_num+1))
+
+done
