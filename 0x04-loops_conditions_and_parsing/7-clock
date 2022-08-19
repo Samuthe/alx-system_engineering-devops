@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
-#display time
+#display time after every 59 min
 
-HOURS=0
-while [ $HOURS -lt 13 ]
+time=0
+
+while [ $time -lt 13 ]
 do
-echo "Hour: $HOURS"
-MINUTES=1
-while [ $MINUTES -lt 60 ]
+echo "Hour: $time"
+time=$((time+1))
+
+minute=1
+
+while [ $minute -lt 60 ]
 do
-echo $MINUTES
-let MINUTES+=1
+echo $minute
+minute=$((minute+1))
+
 done
-let HOURS+=1
 done
