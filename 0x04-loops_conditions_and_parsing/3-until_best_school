@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#use until to execute a script
+
+x=10
+until [ $x -lt 1 ]
+do
+echo "Best School"
+x=$((x-1))
+done
