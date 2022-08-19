@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#displays info about a school file
+
+fileX="my_file"
+
+if [ -e "$fileX" ]
+then
+echo "$fileX exists"
+
+if [ ! -s "$$fileX" ]
+then
+echo "$fileX is empty"
+else
+echo "$fileX is not empty"
+fi
+
+if [ -f "$fileX" ]
+then
+echo "fileX is a regular file"
+fi
+
+else
+echo "$fileX does not exist"
+fi
