@@ -14,5 +14,5 @@ else
 echo "Best School"
 fi
 
-let x+=1
+x=$((x+1))
 done
