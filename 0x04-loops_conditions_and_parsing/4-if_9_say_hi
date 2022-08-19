@@ -3,12 +3,16 @@
 
 x=0
 while [ $x -lt 11 ]
+
 do
 if [ $x = 9 ]
 then
+
 echo "Hi"
+
 else
 echo "Best School"
 fi
+
 let x+=1
 done
