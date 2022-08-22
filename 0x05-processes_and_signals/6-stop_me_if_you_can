@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#The script kills the file without using kill/killall
+
+pkill -f beyond
