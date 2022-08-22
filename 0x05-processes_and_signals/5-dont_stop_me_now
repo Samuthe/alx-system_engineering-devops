@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#writing a script that iterates after every 2 sleep then terminates
+kill "$(ps -x | pgrep -f beyond)"
+
