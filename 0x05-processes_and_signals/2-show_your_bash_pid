@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# find easily bash
+
+./2-show_your_bash_pid | grep "bash"
