@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #script that displays infinity and beyong after every sleep 2
 
-while true;
-do
+while true; do
 echo "To infinity and beyong"
 sleep 2
 done
