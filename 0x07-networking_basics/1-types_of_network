@@ -1,0 +1,10 @@
+#NB LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
+
+#1. What type of network a computer in local is connected to?
+#ans. LAN
+
+#2. What type of network could connect an office in one building to another office in a building a few streets away?
+# ans. WAN
+
+#3 What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?
+#ans. Internet
