@@ -1,22 +1,27 @@
 #!/usr/bin/env bash
-# Redirection of my server
+# config a 404 page in nginx server
+
 apt-get -y update
 apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-sudo chown -R "$USER":"$USER" /var/www
-sudo chmod -R 755 /var/www
+chown -R "$USER":"$USER" /var/www/
+chmod -R 755 /var/www/
 rm -rf /var/www/html/*
 echo "Hello World!" > /var/www/html/index.html
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 service nginx start
 service nginx status
+
 printf %s "server {
     listen 80;
     listen [::]:80 default_server;
-    root   /etc/nginx/html;
-    index  index.html index.html;
+
+    root    /var/www/html;
+
+    index index.html index.htm;
+
     location /redirect_me {
-        return 301 https://alx-intranet.hbtn.io/;
+        return 301 https://modtechy.ke/;
     }
 
     error_page 404 /404.html;
@@ -26,4 +31,5 @@ printf %s "server {
         internal;
     }
 }" > /etc/nginx/sites-available/default
+
 service nginx restart
