@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 # Redirection of my server
 apt-get -y update
 apt-get -y install nginx
