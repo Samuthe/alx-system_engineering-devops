@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # installing haproxy server and config
 
-apt-get -y update
-apt-get -y install haproxy
+sudo apt-get -y update
+sudo apt-get -y install haproxy
 
-echo "\
+sudo echo "\
 # HAproxy Configaration for webserver
 frontend web-frontend
     bind *:80
@@ -12,9 +12,9 @@ frontend web-frontend
     default_backend web-backend
 backend web-backend
     balance roundrobin
-    server 47046-web-01 44.197.251.60 check port 80
-    server 47046-web-02 54.158.217.227 check port 80
-" >> /etc/haproxy/haproxy.cfg
+    server 47046-web-01 44.211.237.227 check port 80
+    server 47046-web-02 3.89.160.164 check port 80
+" | sudo tee -a /etc/haproxy/haproxy.cfg
 haproxy -c -f /etc/haproxy/haproxy.cfg
 service haproxy start
 service haproxy status
