@@ -23,7 +23,7 @@ if [ $# -eq 1 ]; then
     domains[1]='lb-01'
     domains[2]='web-01'
     domains[3]='web-02'
-    
+
     for domain in "${domains[@]}"
     do
             dns_lookup "$1" "$domain"
