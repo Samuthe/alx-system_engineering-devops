@@ -33,6 +33,11 @@ c)Improve the process for auditing all high-risk configuration options
 d)Develop a better mechanism for quickly delivering status notifications during incidents like this
 e)Fix the underlying authentication library files and monitor to correctly timeout/interrupt errors
 
+Diagramatic representation of the issue:
+
+https://docs.google.com/document/d/1JXEI_-gpSdqmEfmghsRz_Q3PCdTT7lwSWMAS-2vEY6Q/edit?usp=sharing
+
+
 sincerely,
 Samuel Ekati,
 DevOps department.
